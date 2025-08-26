@@ -44,7 +44,7 @@ export default function App() {
 			setResponse("Generating response...");
 
 			const res = await axios.post(import.meta.env.VITE_API_URL, {
-				email,
+				emailContent: email,
 				tone,
 			});
 

@@ -48,7 +48,7 @@ export default function App() {
 				tone,
 			});
 
-			setResponse(res.data || JSON.stringify(res.data));
+			setResponse(res.data);
 		} catch (err) {
 			setResponse("");
 			setError(err.message);
